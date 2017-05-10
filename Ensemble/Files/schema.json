@@ -1,0 +1,67 @@
+{
+	"schema": [
+		{
+			"class": "relations",
+			"isBoolean": false,
+			"directionType": "directed",
+			"types": ["relations"],
+			"defaultValue": 50,
+			"minValue": 0,
+			"maxValue": 100,
+			"allowIntent": true
+		},
+		{
+			"class" : "resources",
+			"isBoolean" : true,
+			"directionType" : "undirected",
+			"types" : ["blackCubes","pinkCubes"],
+			"allowIntent" : false,
+			"defaultValue" : false
+		},
+		{
+			"class" : "resourceAmount",
+			"isBoolean" : false,
+			"directionType" : "undirected",
+			"types" : ["blackCubesAmount","pinkCubesAmount"],
+			"allowIntent" : true,
+			"defaultValue" : 0,
+			"maxValue" : 100,
+			"minValue" : 0
+		},
+		{
+			"class" : "trait",
+			"isBoolean" : true,
+			"directionType" : "undirected",
+			"types" : ["neutral","aggressive","friendly","anyone"],
+			"allowIntent" : false,
+			"defaultValue" : false
+		},
+		{
+			"class": "relationships",
+			"isBoolean": true,
+			"directionType": "reciprocal",
+			"types": ["allied","at war"],
+			"defaultValue": false,
+			"allowIntent": true
+		},
+		{
+			"class": "SFDBLabelUndirected",
+			"types": ["harvesting"],
+			"isBoolean": true,
+			"directionType": "undirected",
+			"defaultValue": false,
+			"allowIntent": false,
+			"duration": 0
+		},
+		{
+			"class": "SFDBLabel",
+			"types": ["stoleFrom", "attacked"],
+			"isBoolean": true,
+			"directionType": "directed",
+			"defaultValue": false,
+			"allowIntent": false,
+			"duration": 3
+		}
+	]
+}
+

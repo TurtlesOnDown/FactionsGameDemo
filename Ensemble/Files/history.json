@@ -1,0 +1,76 @@
+{
+	"history": [{
+		"pos": 0,
+		"data": [
+		{
+			"class" : "trait",
+			"type" : "neutral",
+			"first" : "tallGuy",
+			"value" : true
+		},
+
+		{
+			"class" : "trait",
+			"type" : "aggressive",
+			"first" : "fly",
+			"value" : true
+		},
+
+		{
+			"class" : "trait",
+			"type" : "friendly",
+			"first" : "slime",
+			"value" : true
+		},
+
+		{
+			"class" : "trait",
+			"type" : "anyone",
+			"first" : "tallGuy",
+			"value" : true
+		},
+
+		{
+			"class" : "trait",
+			"type" : "anyone",
+			"first" : "fly",
+			"value" : true
+		},
+
+		{
+			"class" : "trait",
+			"type" : "anyone",
+			"first" : "slime",
+			"value" : true
+		},
+
+		{
+			"class" : "resources",
+			"type" : "pinkCubes",
+			"first" : "slime",
+			"value" : true
+		},
+
+		{
+			"class" : "resources",
+			"type" : "blackCubes",
+			"first" : "fly",
+			"value" : true
+		},
+
+		{
+			"class" : "resourceAmount",
+			"type" : "blackCubesAmount",
+			"first" : "fly",
+			"value" : 50
+		},
+
+		{
+			"class" : "resourceAmount",
+			"type" : "pinkCubesAmount",
+			"first" : "slime",
+			"value" : 50
+		}
+		]}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"cast": {
+		"tallGuy": {
+			"name": "TallGuy"
+		},
+		"fly": {
+			"name": "Fly"
+		},
+		"slime": {
+			"name": "Slime"
+		}
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"fileName": "People want Revent",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "People want Revenge",
+			"conditions": [
+				{
+					"class": "SFDBLabel",
+					"type": "attacked",
+					"first": "someone",
+					"second": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "other",
+					"second": "someone",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_1"
+		},
+		{
+			"name": "People don't like thieves",
+			"conditions": [
+				{
+					"class": "SFDBLabel",
+					"type": "stolefrom",
+					"first": "someone",
+					"second": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "other",
+					"second": "someone",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_2"
+		}
+	]
+}

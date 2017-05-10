@@ -1,0 +1,81 @@
+{
+	"fileName": "People want Revent",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "People want Revenge",
+			"conditions": [
+				{
+					"class": "SFDBLabel",
+					"type": "attacked",
+					"first": "someone",
+					"second": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "other",
+					"second": "someone",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_1"
+		},
+		{
+			"name": "People want revenge against thieves",
+			"conditions": [
+				{
+					"class": "SFDBLabel",
+					"type": "stolefrom",
+					"first": "someone",
+					"second": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "other",
+					"second": "someone",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_2"
+		},
+		{
+			"name": "New Volition Rule",
+			"conditions": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 50
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_3"
+		}
+	]
+}
