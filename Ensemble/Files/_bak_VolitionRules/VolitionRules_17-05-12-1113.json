@@ -1,0 +1,29 @@
+{
+	"fileName": "VolitionRules",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "New Volition Rule",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "resourceAmount",
+					"type": "blackcubesamount",
+					"first": "someone",
+					"weight": 1,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_3"
+		}
+	]
+}

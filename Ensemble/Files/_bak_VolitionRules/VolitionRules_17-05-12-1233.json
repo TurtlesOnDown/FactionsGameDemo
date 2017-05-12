@@ -1,0 +1,173 @@
+{
+	"fileName": "VolitionRules",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "everyone wants black cubes",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "resourceAmount",
+					"type": "blackcubesamount",
+					"first": "someone",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_3"
+		},
+		{
+			"name": "Everyone wants more pink cubes",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "resourceAmount",
+					"type": "pinkcubesamount",
+					"first": "someone",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_4"
+		},
+		{
+			"name": "everyone is uneasy",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 1,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_5"
+		},
+		{
+			"name": "Everyone wants friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 1,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_6"
+		},
+		{
+			"name": "Aggressive people want less friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "aggressive",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_7"
+		},
+		{
+			"name": "Friendly people want more friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "friendly",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_8"
+		},
+		{
+			"name": "New Volition Rule",
+			"conditions": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 25
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_9"
+		}
+	]
+}

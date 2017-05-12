@@ -1,0 +1,100 @@
+{
+	"fileName": "VolitionRules",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "everyone wants black cubes",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "resourceAmount",
+					"type": "blackcubesamount",
+					"first": "someone",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_3"
+		},
+		{
+			"name": "Everyone wants more pink cubes",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "resourceAmount",
+					"type": "pinkcubesamount",
+					"first": "someone",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_4"
+		},
+		{
+			"name": "everyone is uneasy",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 2,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_5"
+		},
+		{
+			"name": "Everyone wants friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 1,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "VolitionRules",
+			"id": "volitionRules_6"
+		}
+	]
+}
