@@ -1,0 +1,59 @@
+{
+	"fileName": "Enemy of my enemy is my friend",
+	"type": "trigger",
+	"rules": [
+		{
+			"name": "Enemy of my friend is my enemy",
+			"conditions": [
+				{
+					"class": "relationships",
+					"type": "allied",
+					"first": "x",
+					"second": "y",
+					"value": true
+				},
+				{
+					"class": "relationships",
+					"type": "at war",
+					"first": "y",
+					"second": "z",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relationships",
+					"type": "at war",
+					"first": "x",
+					"second": "z",
+					"value": true
+				}
+			],
+			"origin": "Enemy of my enemy is my friend",
+			"id": "triggerRules_13"
+		},
+		{
+			"name": "New Trigger Rule",
+			"conditions": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 25
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 25
+				}
+			],
+			"origin": "Enemy of my enemy is my friend",
+			"id": "triggerRules_14"
+		}
+	]
+}

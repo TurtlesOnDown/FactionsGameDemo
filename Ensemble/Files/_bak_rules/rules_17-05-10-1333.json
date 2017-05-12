@@ -1,0 +1,275 @@
+{
+	"fileName": "rules",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "People want Revenge",
+			"conditions": [
+				{
+					"class": "SFDBLabel",
+					"type": "attacked",
+					"first": "someone",
+					"second": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "other",
+					"second": "someone",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_1"
+		},
+		{
+			"name": "People want revenge against thieves",
+			"conditions": [
+				{
+					"class": "SFDBLabel",
+					"type": "stolefrom",
+					"first": "someone",
+					"second": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "other",
+					"second": "someone",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_2"
+		},
+		{
+			"name": "Everyone is uneasy",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 1,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_3"
+		},
+		{
+			"name": "Everyone wants friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 1,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_4"
+		},
+		{
+			"name": "Friendly people want more friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "friendly",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_5"
+		},
+		{
+			"name": "Aggresive people want less friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "aggressive",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_6"
+		},
+		{
+			"name": "Everyone wants more black cubes",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "resourceAmount",
+					"type": "blackcubesamount",
+					"first": "someone",
+					"weight": 1,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_7"
+		},
+		{
+			"name": "Everyone wants pink cubes",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "resourceAmount",
+					"type": "pinkcubesamount",
+					"first": "someone",
+					"weight": 1,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_8"
+		},
+		{
+			"name": "Friends want to be allies",
+			"conditions": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 40,
+					"operator": ">"
+				}
+			],
+			"effects": [
+				{
+					"class": "relationships",
+					"type": "allied",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_9"
+		},
+		{
+			"name": "Enemies want to go to war",
+			"conditions": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 10,
+					"operator": "<"
+				}
+			],
+			"effects": [
+				{
+					"class": "relationships",
+					"type": "at war",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_10"
+		},
+		{
+			"name": "New Volition Rule",
+			"conditions": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 25
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "rules",
+			"id": "volitionRules_11"
+		}
+	]
+}

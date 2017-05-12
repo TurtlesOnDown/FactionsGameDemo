@@ -1,0 +1,200 @@
+{
+	"fileName": "People want Revent",
+	"type": "volition",
+	"rules": [
+		{
+			"name": "People want Revenge",
+			"conditions": [
+				{
+					"class": "SFDBLabel",
+					"type": "attacked",
+					"first": "someone",
+					"second": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "other",
+					"second": "someone",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_1"
+		},
+		{
+			"name": "People want revenge against thieves",
+			"conditions": [
+				{
+					"class": "SFDBLabel",
+					"type": "stolefrom",
+					"first": "someone",
+					"second": "other",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "other",
+					"second": "someone",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_2"
+		},
+		{
+			"name": "Everyone is uneasy",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 1,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_3"
+		},
+		{
+			"name": "Everyone wants friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 1,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_4"
+		},
+		{
+			"name": "Friendly people want more friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "friendly",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_5"
+		},
+		{
+			"name": "Aggresive people want less friends",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "aggressive",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": false,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_6"
+		},
+		{
+			"name": "Everyone wants more black cubes",
+			"conditions": [
+				{
+					"class": "trait",
+					"type": "anyone",
+					"first": "someone",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "resourceAmount",
+					"type": "blackcubesamount",
+					"first": "someone",
+					"weight": 1,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_7"
+		},
+		{
+			"name": "New Volition Rule",
+			"conditions": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 50
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"weight": 5,
+					"intentDirection": true,
+					"value": true
+				}
+			],
+			"origin": "People want Revent",
+			"id": "volitionRules_8"
+		}
+	]
+}

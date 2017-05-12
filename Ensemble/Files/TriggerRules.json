@@ -1,0 +1,59 @@
+{
+	"fileName": "TiggerRules",
+	"type": "trigger",
+	"rules": [
+		{
+			"name": "Enemy of my friend is my enemy",
+			"conditions": [
+				{
+					"class": "relationships",
+					"type": "allied",
+					"first": "x",
+					"second": "y",
+					"value": true
+				},
+				{
+					"class": "relationships",
+					"type": "at war",
+					"first": "y",
+					"second": "z",
+					"value": true
+				}
+			],
+			"effects": [
+				{
+					"class": "relationships",
+					"type": "at war",
+					"first": "x",
+					"second": "z",
+					"value": true
+				}
+			],
+			"origin": "Enemy of my enemy is my friend",
+			"id": "triggerRules_13"
+		},
+		{
+			"name": "True enemies go to war",
+			"conditions": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "x",
+					"second": "y",
+					"value": 0
+				}
+			],
+			"effects": [
+				{
+					"class": "relationships",
+					"type": "at war",
+					"first": "x",
+					"second": "y",
+					"value": true
+				}
+			],
+			"origin": "Enemy of my enemy is my friend",
+			"id": "triggerRules_14"
+		}
+	]
+}

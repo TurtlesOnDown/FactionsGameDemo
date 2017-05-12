@@ -1,0 +1,29 @@
+{
+	"fileName": "Enemy of my enemy is my friend",
+	"type": "trigger",
+	"rules": [
+		{
+			"name": "New Trigger Rule",
+			"conditions": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 25
+				}
+			],
+			"effects": [
+				{
+					"class": "relations",
+					"type": "relations",
+					"first": "someone",
+					"second": "other",
+					"value": 25
+				}
+			],
+			"origin": "Enemy of my enemy is my friend",
+			"id": "triggerRules_12"
+		}
+	]
+}

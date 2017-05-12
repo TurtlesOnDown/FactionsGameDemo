@@ -5,9 +5,9 @@
 			"isBoolean": false,
 			"directionType": "directed",
 			"types": ["relations"],
-			"defaultValue": 50,
+			"defaultValue": 25,
 			"minValue": 0,
-			"maxValue": 100,
+			"maxValue": 50,
 			"allowIntent": true
 		},
 		{
