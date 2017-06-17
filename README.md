@@ -1,8 +1,11 @@
 # FactionsGameDemo
  
 A demo-game using the Ensemble Engine and Phaser to demonstrate the use of a rule based system to generate quests.
+
+[Ensemble](https://games.soe.ucsc.edu/project/ensemble-engine)
+[Phaser](http://phaser.io/)
  
-I build this project for two reasons, the first was to be able to demonstrate it in working product and to help teach myself Phaser. Since I was an assistant for a game programming class, this project helped me learn the system so that I could in turn help the students.
+I built this project for two reasons, the first was to be able to demonstrate it in working product and to help teach myself Phaser. Since I was an assistant for a game programming class, this project helped me learn the system so that I could in turn help the students.
  
 ## Goals of the project:
  
